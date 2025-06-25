@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadassah victoria - Professional Portfolio</title>
+    <meta name="description" content="Professional Portfolio - Showcasing Skills, Projects & Experience">
+    <meta name="author" content="John Doe">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-brand">PORTFOLIO</div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="/resume.pdf" download class="btn btn-primary">Download Resume</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-image">
+                <div class="profile-placeholder"><img src="images/Snapchat-1393144116.jpg" alt="profile photo"></div>
+            </div>
+            <h1 class="hero-title">Hadassah victoria</h1>
+            <div class="hero-subtitle">
+                <span id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                Aspiring Web Developer and Creative Designer on a journey to craft clean, user-friendly digital experiences. Driven by passion, powered by curiosity.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More About Me</button>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="scrollToSection('about')">
+            <div class="chevron-down">⌄</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text animate-on-scroll">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <div class="about-content">
+                        <p>
+                            Hey! I'm Hadassah Victoria, a passionate and self-taught Creative Web Developer with a love for both design and functionality. I enjoy bringing ideas to life through clean code, thoughtful user interfaces, and a touch of creativity.
+                        </p>
+                        <p>
+                            From building mental wellness chatbots to crafting fictional fairy brands and magazine covers, I’ve explored how both technology and design can create meaningful digital experiences. I believe in learning by doing — and every project I take on helps me grow as both a developer and a designer.
+                        </p>
+                        <p>
+                            I'm currently pursuing my B.Tech in IT, and constantly expanding my skills in frontend development, visual storytelling, and building beautiful things that actually work.
+                        </p>
+                        <p>
+                            Whether it's a line of code or a layout on Canva, I'm always excited to learn, experiment, and bring value through creativity.
+                        </p>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years of Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <div class="image-container">
+                        <div class="image-placeholder"><img src="images/Snapchat-1969332769.jpg"></div>
+                        <div class="image-badge">👩‍🎓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">SKILLS & EXPERTISE</h2>
+                <p class="section-description">
+                  My growing tech stack blends both creative and technical skills — enabling me to design, develop, and deploy responsive web applications with real-world impact.  
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skills-progress animate-on-scroll">
+                    <h3 class="skills-subtitle">Technical Proficiency</h3>
+                    <div class="skills-list" id="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>HTML5</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>CSS3</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>JavaScript (DOM)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>AI Tools</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Python </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Canva (Creative Design)</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>MySQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span>Flask</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress-bar" data-width="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-tech animate-on-scroll">
+                    <h3 class="skills-subtitle">Technologies & Tools</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">HTML5</div>
+                        <div class="tech-item">CSS3</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">MySQL</div>
+                        <div class="tech-item">Canva</div>
+                        <div class="tech-item">Git & GitHub</div>
+                        <div class="tech-item">Figma</div>
+                        <div class="tech-item">Bootstrap</div>
+                        <div class="tech-item">Flask</div>
+                        <div class="tech-item">Groq API</div>
+                        <div class="tech-item">AI Img Gen</div>
+                    </div>
+                    <div class="certifications">
+                        <h4 class="cert-title">Certifications</h4>
+                        <ul class="cert-list">
+                            <li>• AWS Certified Developer</li>
+                            <li>• Google UX Design Certificate</li>
+                            <li>• Meta Front-End Developer</li>
+                            <li>• MongoDB Certified Developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <p class="section-description">
+                     A collection of hands-on projects built during my internship and personal learning journey — highlighting my passion for web development, creativity, and continuous growth.
+                </p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">🫧</div>
+                    <h3 class="project-title">Mental Wellness Support Bot</h3>
+                    <p class="project-description">
+                       A wellness-focused web app that tracks moods, stores chat history locally, and offers emotional support. Built with Flask and JS frontend.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">🛍️</div>
+                    <h3 class="project-title"> Her Closet – Fashion E-Commerce Website</h3>
+                    <p class="project-description">
+                         A stylish fashion store website with search, filter, and product display features. Built with a clean UI and pastel theme to enhance shopping experience.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">📄</div>
+                    <h3 class="project-title">Resume Builder Web App</h3>
+                    <p class="project-description">
+                       A personal ATS friendly resume builder that lets users input details and generate a formatted resume. Simple, functional, and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">📝</div>
+                    <h3 class="project-title">Markdown Blog Website</h3>
+                    <p class="project-description">
+                       A blog platform that converts markdown input into styled HTML. Great for practicing content rendering and real-time preview
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Marked.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">📊</div>
+                    <h3 class="project-title">Student Management Dashboard</h3>
+                    <p class="project-description">
+                      A clean dashboard-style interface to manage student records and display data insights. Mimics real-world admin panel layout
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">🌸</div>
+                    <h3 class="project-title">TaskBloom – To-Do List App</h3>
+                    <p class="project-description">
+                      A minimalist task manager that helps users add, remove, and mark completed tasks. Focused on usability and state management in JS.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">🧚‍♀️</div>
+                    <h3 class="project-title">Whimsy Wonders – Arts & Crafts Club Website</h3>
+                    <p class="project-description">
+                      A fictional enchanted club site for arts and crafts lovers. Features soft pastel design and magical visual elements to reflect the club’s creative vibe.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">🎁</div>
+                    <h3 class="project-title">Her Creations – Handmade Cards Website</h3>
+                    <p class="project-description">
+                       A charming product showcase website for customizable greeting cards and gift items. Simple and elegant layout with product visuals.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">👩‍💻</div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                      A personal portfolio website showcasing projects, skills, and contact info. Built with a clean, scroll-friendly layout and download resume feature
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-more animate-on-scroll">
+                <a href="#" class="view-all-link">View All Projects →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">GET IN TOUCH</h2>
+                <p class="section-description">
+                  Interested in collaborating or hiring? I'm open to internships, freelance work, and meaningful opportunities to grow in the web development space.  
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-form-container animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-intro">
+                        <h3 class="contact-subtitle">Let's Connect</h3>
+                        <p>
+                            I'm always interested in new opportunities and collaborations. 
+                            Whether you have a project in mind or just want to chat about 
+                            technology, feel free to reach out!
+                        </p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">hadassahvictoria1@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+91 9392740851</div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">kakinada , Andhra pradesh</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4 class="social-title">Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐱</a>
+                        </div>
+                    </div>
+                    <div class="response-time">
+                        <h4 class="response-title">Response Time</h4>
+                        <p>
+                            I typically respond to messages within 24 hours. For urgent 
+                            inquiries, please call or mention "urgent" in your subject line.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Hadassah victoria</div>
+                <p class="footer-description">
+                    Creating digital experiences that inspire and engage. 
+                    Let's build something amazing together.
+                </p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Hadassah Victoria. All rights reserved. Built with passion and purpose.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
